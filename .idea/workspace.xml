@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4a91d8f-404d-4cb4-9ff6-084b1ab21bf4" name="Changes" comment="" />
+    <list default="true" id="e4a91d8f-404d-4cb4-9ff6-084b1ab21bf4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ProjetoFinal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/Base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/Home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/teste.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/3a1d4cf7-ac09-46f3-bf5b-9652224afc58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Captura de tela 2025-11-11 105715.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/download (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/engrenagem (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/estrategia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fones-de-ouvido.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/freepik1__upload__89304.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/freepik__upload__89304.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imagem_central.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/joystick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/luvas-de-boxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/rosa-dos-ventos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/sem fundo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/the_last_of_us.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="35KX4ULlVUfDAHFr7yJTO2Lmz7Y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,13 +62,34 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Home.html.executor": "Run",
+    "JavaScript Debug.teste.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/senai_25_26/ProjetoFinal/static",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.python.templateLanguages.PyTemplateLanguageModulesConfigurable",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\senai_25_26\ProjetoFinal\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\senai_25_26\ProjetoFinal\static" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -42,7 +105,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762859545817</updated>
-      <workItem from="1762859546889" duration="2000" />
+      <workItem from="1762859546889" duration="9547000" />
+      <workItem from="1763377596193" duration="16484000" />
     </task>
     <servers />
   </component>

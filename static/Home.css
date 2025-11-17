@@ -1,0 +1,321 @@
+/* Definindo o estilo global da página */
+body {
+    /*background-color: #440071;*/
+    margin: 0 auto;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    background-image: linear-gradient(to bottom right, #1B0035, #1B0035, #50009B);
+}
+
+/* Estilo da base da página */
+.base {
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 10px;
+    /*background-color: purple;*/
+    height: 120px;
+    background-image: linear-gradient(to right, #1B0035, #1B0035, #50009B);
+}
+
+/* Estilo do logo */
+.img_logo img {
+    margin-top: 10px;
+    height: 120px;
+    width: 145px;
+    margin-left: 20px;
+}
+
+/* Estilo do botão de início */
+.inicio {
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.inicio:hover {
+    height: 45px;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.inicio img {
+    margin-right: 8px;
+}
+
+/* Estilo da barra de pesquisa */
+.barra_pesquisa_div {
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 290px;
+}
+
+.barra_pesquisa {
+    background-color: #440071;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    border: none;
+    border: 1px solid black;
+}
+
+.barra_pesquisa:hover {
+    background-color: #440071;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    border: none;
+    border: 1px solid white;
+}
+
+.barra_pesquisa::placeholder {
+    color: #fff;
+}
+
+/* Ícone do chat */
+.icone_chat img {
+    height: 30px;
+    width: 30px;
+    margin-top: 55px;
+    margin-left: 220px;
+}
+
+.icone_chat img:hover {
+    height: 32px;
+    width: 32px;
+    margin-top: 55px;
+    margin-left: 220px;
+}
+
+/* Estilo da área de login */
+.div_login {
+    height: 25px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 20px;
+    border: 2px solid #DAA520;
+    color: #DAA520;
+    font-weight: bold;
+}
+
+.div_login:hover{
+    height: 25px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 22px;
+    border: 3px solid #DAA520;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo do botão de Sign Up */
+.div_sigin_up {
+    height: 25px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 35px;
+    font-size: 20px;
+    background-image: linear-gradient(to bottom, white, #DAA520, #DAA520);
+    color: black;
+    font-weight: bold;
+}
+
+.div_sigin_up:hover {
+    height: 25px;
+    margin-top: 50px;
+    margin-left: 35px;
+    font-size: 21px;
+    background-image: linear-gradient(to bottom, white, #DAA520, #DAA520);
+    color: white;
+    font-weight: bold;
+}
+
+.opcoes{
+    display: flex;
+    /*background-color: #440071;*/
+    background-image: linear-gradient(to right, #1B0035, #1B0035, #50009B);
+
+    gap: 15px;
+    height: 20px;
+    padding: 7px;
+    font-size: 15px;
+    border: 1px solid #DAA520;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.opcoes div:hover{
+
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Estilo das imagens centrais */
+.img_central {
+    width: 693px;
+    margin-top: 35px;
+    margin-left: 25%;
+}
+
+.img_div {
+    border-radius: 20px;
+}
+
+/* Estilo das divs pai (para estruturação da página) */
+.pai_linha {
+    display: flex;
+    background-color: red;
+    height: 100%;
+}
+
+
+/* Barra lateral (menu) */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Barra começa fora da tela */
+    background-color: #1B0035;
+    padding-top: 20px;
+    transition: left 0.3s;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 16px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    background-color: #50009B;
+}
+
+/* Ícone de menu (para abrir a barra lateral) */
+.menu-icon {
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+}
+
+/* Botão de fechamento da barra lateral */
+.close-btn {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Controle da barra lateral com checkbox */
+.menu-toggle {
+    display: none; /* O checkbox fica invisível */
+}
+
+/* Quando o checkbox estiver marcado, a barra lateral aparece */
+.menu-toggle:checked + .sidebar {
+    left: 0;
+}
+
+/* Quando o checkbox estiver marcado, o ícone do menu some */
+.menu-toggle:checked + .sidebar + .menu-icon {
+    display: none;
+}
+
+/* Estilo da categoria */
+.categoria {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #1B0035;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo da lista de categorias */
+.pai_coluna ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pai_coluna ul li {
+    padding: 10px 20px;
+}
+
+.pai_coluna ul li img {
+    margin-right: 10px;
+}
+
+.prin_jogos_inicio{
+    display: flex;
+    gap: 25px;
+
+}
+h4{
+    margin-left: 100px;
+    color: white;
+}
+.jogo_1 img{
+    display: flex;
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+    flex: auto;
+    margin-left: 100px;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.jogo_2 img{
+    display: flex;
+    flex: auto;
+    width: 400px;
+    height: 200px;
+}
+
+.jogo_3 img{
+    display: flex;
+    flex: auto;
+    width: 400px;
+    height: 200px;
+}
+
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
