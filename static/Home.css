@@ -145,7 +145,7 @@ body {
     display: flex;
     /*background-color: #440071;*/
     background-image: linear-gradient(to right, #1B0035, #1B0035, #50009B);
-
+    font-weight: lighter;
     gap: 15px;
     height: 20px;
     padding: 7px;
@@ -188,7 +188,7 @@ body {
     position: fixed;
     top: 0;
     left: -250px; /* Barra começa fora da tela */
-    background-color: #1B0035;
+    background-image: linear-gradient(to bottom right, #1B0035, #1B0035, #50009B);
     padding-top: 20px;
     transition: left 0.3s;
     z-index: 1;
@@ -205,6 +205,12 @@ body {
 }
 
 .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -277,6 +283,7 @@ body {
 .prin_jogos_inicio{
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 
 }
 h4{
