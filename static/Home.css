@@ -13,13 +13,14 @@ body {
     /*justify-content: space-between;*/
     padding: 10px;
     /*background-color: purple;*/
-    height: 120px;
+    height: 85px;
     background-image: linear-gradient(to right, #1B0035, #1B0035, #50009B);
+
 }
 
 /* Estilo do logo */
 .img_logo img {
-    margin-top: 10px;
+    /*margin-top: 1px;*/
     height: 120px;
     width: 145px;
     margin-left: 20px;
@@ -28,7 +29,7 @@ body {
 /* Estilo do botão de início */
 .inicio {
     height: 40px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 30px;
     padding: 10px;
     display: flex;
@@ -38,7 +39,7 @@ body {
 
 .inicio:hover {
     height: 45px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 30px;
     padding: 10px;
     display: flex;
@@ -52,8 +53,8 @@ body {
 
 /* Estilo da barra de pesquisa */
 .barra_pesquisa_div {
-    margin-left: 300px;
-    margin-top: 50px;
+    margin-left: 250px;
+    margin-top: 30px;
     width: 290px;
 }
 
@@ -85,14 +86,14 @@ body {
 .icone_chat img {
     height: 30px;
     width: 30px;
-    margin-top: 55px;
+    margin-top: 40px;
     margin-left: 220px;
 }
 
 .icone_chat img:hover {
     height: 32px;
     width: 32px;
-    margin-top: 55px;
+    margin-top: 40px;
     margin-left: 220px;
 }
 
@@ -100,7 +101,7 @@ body {
 .div_login {
     height: 25px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 40px;
     font-size: 20px;
     border: 2px solid #DAA520;
@@ -111,7 +112,7 @@ body {
 .div_login:hover{
     height: 25px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 40px;
     font-size: 22px;
     border: 3px solid #DAA520;
@@ -123,7 +124,7 @@ body {
 .div_sigin_up {
     height: 25px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 35px;
     font-size: 20px;
     background-image: linear-gradient(to bottom, white, #DAA520, #DAA520);
@@ -133,7 +134,7 @@ body {
 
 .div_sigin_up:hover {
     height: 25px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 35px;
     font-size: 21px;
     background-image: linear-gradient(to bottom, white, #DAA520, #DAA520);
@@ -151,8 +152,8 @@ body {
     padding: 7px;
     font-size: 15px;
     border: 1px solid #DAA520;
-    border-bottom-left-radius: 10px ;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px;
     color: white;
 }
 
@@ -160,6 +161,7 @@ body {
 
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Estilo das imagens centrais */
@@ -169,8 +171,18 @@ body {
     margin-left: 25%;
 }
 
+.img_central:hover {
+    width: 693px;
+    margin-top: 34px;
+    margin-left: 25%;
+}
+
 .img_div {
     border-radius: 20px;
+}
+.img_div:hover {
+    border-radius: 20px;
+    border: 1px solid #DAA520;
 }
 
 /* Estilo das divs pai (para estruturação da página) */
@@ -280,45 +292,183 @@ body {
     margin-right: 10px;
 }
 
-.prin_jogos_inicio{
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-
-}
-h4{
-    margin-left: 100px;
-    color: white;
-}
-.jogo_1 img{
-    display: flex;
-    background-color: blue;
-    width: 400px;
-    height: 200px;
-    flex: auto;
-    margin-left: 100px;
-}
-
-p{
-    text-align: center;
+/* Estilo para o título "Principais Recomendados" */
+h4 {
+    margin-top: 50px;
+    margin-left: 165px;
     color: white;
     font-weight: bold;
 }
 
-.jogo_2 img{
-    display: flex;
-    flex: auto;
-    width: 400px;
-    height: 200px;
+h4:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
-.jogo_3 img{
+/* Estilo da seção de jogos */
+
+.prin_jogos_inicio {
     display: flex;
-    flex: auto;
-    width: 400px;
-    height: 200px;
+    gap: 25px; /* Espaçamento entre os jogos */
+    flex-wrap: wrap; /* Permite que os jogos se movam para a linha seguinte quando necessário */
+    justify-content: center; /* Centraliza os itens na linha */
+    padding: 20px;
 }
 
+/* Estilo para cada jogo */
+.jogo_1, .jogo_2, .jogo_3 {
+    display: flex;
+    flex-direction: column; /* Organiza a imagem e o texto em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 10px;
+    text-align: center;
+    color: white;
+    width: 350px; /* Define a largura fixa para todos os jogos */
+    height: 450px; /* Define a altura fixa para todos os jogos */
+}
+
+/* Imagem do jogo */
+.jogo_1 img, .jogo_2 img, .jogo_3 img {
+    width: 100%; /* Faz com que a imagem ocupe 100% do espaço disponível no container */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 200px; /* Define a altura máxima para as imagens */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorcer, cortando se necessário */
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estilo para o título do jogo */
+.jogo_1 p, .jogo_2 p, .jogo_3 p {
+    font-size: 18px;
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-weight: bold;
+}
+
+.jogo_1 p:hover, .jogo_2 p:hover, .jogo_3 p:hover {
+    font-size: 18px;
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.div_cadastro{
+    background-color: white;
+    width: 375px;
+    display: flex;
+    padding: 10px;
+    margin-top: 15%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 450px;
+    background-image: linear-gradient(to bottom, #1B0035, #1B0035,#1B0035,#1B0035,#1B0035,#1B0035,#1B0035,#2c0154, #DAA520);
+}
+
+
+
+.pai_login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #350069, #2c0059, #1B0035);
+    padding-bottom: 100px;
+}
+
+
+
+
+.digite_nome{
+    border-radius: 15px;
+    background-color: #2A0052;
+    font-size: 18px;
+    padding: 8px;
+    width: 210px;
+    height: 20px;
+    border: 2px solid #1B0035;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+.digite_email{
+    border-radius: 15px;
+    background-color: #2A0052;
+    font-size: 18px;
+    padding: 8px;
+    width: 210px;
+    height: 20px;
+    border: 2px solid #1B0035;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+.digite_senha{
+    border-radius: 15px;
+    background-color: #2A0052;
+    font-size: 18px;
+    padding: 8px;
+    width: 210px;
+    height: 20px;
+    border: 2px solid #1B0035;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+
+.botao_login{
+    width: 180px;
+    height: 38px;
+    border-radius: 10px;
+    margin-left: 38px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    border: black;
+    cursor: pointer;
+}
+
+.botao_login:hover{
+    border: 1px solid white;
+}
+
+.esqueci_a_senha{
+    cursor: pointer;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.esqueci_a_senha:hover{
+    text-decoration: underline;
+}
+
+.icones_login{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.icones_login div:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
 
 .montserrat-<uniquifier> {
   font-family: "Montserrat", sans-serif;
